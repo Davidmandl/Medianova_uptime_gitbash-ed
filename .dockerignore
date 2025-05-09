@@ -1,0 +1,59 @@
+# Python artifacts
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+.coverage
+
+# Development artifacts
+.idea/
+.vscode/
+*.swp
+*.swo
+dist/
+build/
+out/
+test/
+tests/
+debug/
+*.log
+
+# Version control
+.git/
+.gitignore
+.svn/
+.hg/
+
+# Environment and secrets
+.env*
+*.env
+*.pem
+*.key
+*.crt
+config.local.*
+*.local.yml
+
+# Project-specific patterns
+docs/
+*.md
+README*
+Dockerfile*
+docker-compose*
+tmp/
+temp/
+*.tmp
+.local/
+local/
+
+# Ignore Nginx config if not needed in build context
+# nginx.conf
+
+# Ignore text files not needed in build
+*.txt
+
+# Allow requirements.txt (needed for Python builds)
+!requirements.txt
+# Allow app.py (main application)
+!app.py
+# Allow nginx.conf if needed (uncomment if required)
+#!nginx.conf
